@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">789Bet Không ngừng</string>
+
+    <string name="b1">Thông tin về thể thao</string>
+    <string name="b2">Thông tin khác</string>
+    <string name="b3">Phần trò chơi</string>
+
+    <string name="subB1">(Đăng ký/Đăng nhập)</string>
+
+    <string name="press_back">Press back again to exit</string>
+</resources>
