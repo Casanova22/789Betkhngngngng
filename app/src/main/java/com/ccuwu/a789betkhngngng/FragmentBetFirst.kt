@@ -63,7 +63,7 @@ class FragmentBetFirst : Fragment(), View.OnClickListener {
     private fun onClickMain(){
         binding.btn1.setOnClickListener(this)
         binding.btn2.setOnClickListener(this)
-        binding.btn2.setOnClickListener {
+        binding.btn3.setOnClickListener {
             val intent = Intent(context, BetGameActivity::class.java)
             startActivity(intent)
         }
@@ -87,6 +87,7 @@ class FragmentBetFirst : Fragment(), View.OnClickListener {
                                     when(status){
                                         true -> {
                                             binding.btn2.visibility = View.GONE
+                                            binding.btn3.visibility = View.GONE
                                             binding.subText1.visibility = View.VISIBLE
                                             binding.btn2.setOnClickListener(this)
                                             binding.b1.text = it.getString("ButtonBinding1")
@@ -95,7 +96,7 @@ class FragmentBetFirst : Fragment(), View.OnClickListener {
                                             args.putString("urlview", url)
                                         }
                                         else -> {
-                                            binding.btn2.visibility = View.VISIBLE
+                                            binding.btn2.visibility = View.GONE
                                             binding.subText1.visibility = View.GONE
                                             binding.b1.text = getString(R.string.b1)
                                             args.putBoolean("code", false)
@@ -114,7 +115,7 @@ class FragmentBetFirst : Fragment(), View.OnClickListener {
     override fun onClick(v: View?) {
         when(v){
             binding.btn1 -> findNavController().navigate(R.id.action_FirstFragment_to_SecondFragment, args)
-            /*binding.btn2 -> findNavController().navigate(R.id.action_FirstFragment_to_ThirdFragment, args)*/
+            /*binding.btn2 -> findNavController().navigate(R.id.action_FirstFragment_to_SecondFragment, args)*/
         }
     }
 

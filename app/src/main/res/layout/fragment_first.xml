@@ -206,11 +206,6 @@
         android:layout_height="match_parent"
         xmlns:app="http://schemas.android.com/apk/res-auto">
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
-
             <FrameLayout
                 android:id="@+id/navFl"
                 android:layout_width="match_parent"
@@ -304,6 +299,7 @@
                         android:layout_height="80dp"
                         android:layout_gravity="center_horizontal"
                         android:layout_marginStart="25dp"
+                        android:visibility="gone"
                         android:layout_marginTop="15dp"
                         android:layout_marginEnd="25dp"
                         android:layout_marginBottom="10dp"
@@ -352,7 +348,7 @@
                         </LinearLayout>
                     </RelativeLayout>
 
-                    <!--<RelativeLayout
+                    <RelativeLayout
                         android:id="@+id/btn3"
                         android:layout_width="300dp"
                         android:layout_height="80dp"
@@ -361,9 +357,9 @@
                         android:layout_marginTop="15dp"
                         android:layout_marginEnd="25dp"
                         android:layout_marginBottom="50dp"
-                        android:visibility="gone"
                         android:background="@drawable/button_selector"
                         android:elevation="5dp">
+
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="150dp"
@@ -373,19 +369,18 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:shadowColor="#121212"
+                                android:shadowColor="#EDA731"
                                 android:shadowDx="5"
                                 android:shadowDy="5"
                                 android:shadowRadius="15"
                                 android:text="@string/b3"
                                 android:textAllCaps="false"
-                                android:textColor="#ffffff"
+                                android:textColor="#FCF346"
                                 android:textSize="20sp"
                                 android:textStyle="bold"
                                 />
                         </LinearLayout>
                     </RelativeLayout>-->
-                </LinearLayout>
-            </androidx.core.widget.NestedScrollView>
-        </RelativeLayout>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
     </RelativeLayout>
